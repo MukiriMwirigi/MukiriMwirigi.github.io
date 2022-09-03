@@ -4,10 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>MukiriMwirigi</title>
+    <link rel="stylesheet"  href="\all.css" type ="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Oswald -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+	<!-- Raleway -->
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
+
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <p>My name is Mukiri</p>
+    <h1 id="ouevre">The Ouevre</h1>
+        <div class="topnav">
+            <a href="#About" id= "about" class="active" class="about">About</a>
+            <a href="#Experience" class="btn">Experience</a>
+            <a href="#Projects" class="btn">Projects</a>
+            <a href="#Library" class="btn">Library</a>
+        </div>
+
+        <a target="_blank", class="landing_link", id="landing_github", href="https://github.com/MukiriMwirigi">
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </a>
+
+        <a target="_blank", class="landing_link", id="landing_linkedin", href="https://www.linkedin">
+            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+        </a>
+    
+    <div class="main" id="section1">
+        <div>
+            <h1 id="hi">Hello, My name is Mukiri. <br> <span>Student of Artificial Intelligence</span></h1>
+    
+            <div id="flyer"><img src="\image\fly-gf6910b293_1280.png" id="fly"></div>
+            <div id="lowerBackground">
+              <a href="#section2" class="navbuttons" id="scrollDown" data-target="aboutDown">
+                <div>
+                    <p>Allow me to introduce myself</p>
+                </div>
+                <i class="fa fa-angle-down"></i>
+              </a>
+            </div>
+        
+        </div>
+    </div>
+    
+    <div class="main" id="section2">
+        <a href="#section1" class="navbuttons" id="scrollDown" data-target="aboutDown">Up</a>
+        
+        <div id="aboutWrapper">
+			<!--<h1 id="aboutMe" style="margin: 200px;">About Me</h1>-->
+			<div id="aboutText">
+				<p>
+					My name is Mukiri Mwirigi and I'm currently in my final year studying towards a Master of Science degree in Machine Learning and Artificial Intelligence. <br> 
+					I've always loved sketching, tinkering with things and exploring new tools to create with. I really enjoy building with ones and zeros and have been fascinated with computers since I first saw my family's Macintosh Classic boot up. 
+					I love how programming enables people to quickly explore new ideas and I've found that the most efficient and fun way for me to learn is to explore different languages and tools in small side projects in parallel to my studies and current employment. This website is a good example of that as building it was my way of learning web development. I have authored the machine learning library <a href="https://github.com/eriklindernoren/ML-From-Scratch" style="text-decoration: none; font-weight: bold; color: black;", target="_black">ML-From-Scratch</a> on GitHub, where I have implemented an extensive list of fundamental machine learning models and algorithms from scratch in vanilla Python.
+					Besides engaging myself in side projects, hanging out with friends and studying, I'm a huge basketball junkie.
+					I have only missed a handful of Boston Celtics games in the last couple of years and have been a NBA League Pass subscriber since 2007. 
+					<br><br>If you want to know more about me, what I'm up to or if you're just feeling social - <b>feel free to get in touch</b>, I would love to hear from you.
+				</p>
+			</div>
+		</div>
+		<a id="resume" href="pdf/cv.pdf" target="_black">
+				<p>Resume</p>
+				<div id="resumeExpandingBackground"></div>
+		</a>
+
+        <a href="#section3" class="navbuttons" id="scrollDown" data-target="aboutDown" >Down</a>
+
+    </div>
+
+    <div class="main" id="section3">
+        <h2>Section 3</h2>
+        <a href="#section2">Click Me to Smooth Scroll to Section 2 Above</a>
+        <a href="#section4">Click Me to Smooth Scroll to Section 4 Below</a>
+    </div>
+
+    <div class="main" id="section4">
+        <h2>Section 4</h2>
+        <a href="#section3">Click Me to Smooth Scroll to Section 3 Above</a>
+        <a href="#section5">Click Me to Smooth Scroll to Section 5 Below</a>
+    </div>
+
+    <div class="main" id="section5">
+        <h2>Section 5</h2>
+        <a href="#section4">Click Me to Smooth Scroll to Section 4 Above</a>
+    </div>
     
 </body>
 </html>
+

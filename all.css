@@ -1,0 +1,357 @@
+/*------------------SECTIONS AND SCROLL --------------------- */
+html {
+    scroll-behavior: smooth;
+  }
+  
+#section1 {
+    height: 670px;
+    background-color: black;
+  }
+  
+#section2 {
+    height: 760px;
+    background-color: black;
+  }
+  
+#section3 {
+    height: 700px;
+    background-color: white;
+  }
+  
+#section4 {
+    height: 700px;
+    background-color: yellow;
+  }
+
+#section5 {
+    height: 700px;
+    background-color: purple;
+  }
+
+  /*----------------NAVBAR ----------------------*/
+  /*--------------------------------------------*/
+
+#ouevre{
+    color: rgb(153, 70, 11);;
+    z-index: 3;
+    transition: 0.2s linear;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+	
+  }
+  
+.topnav a {
+    float: center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; 
+  }
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+.topnav a.active {
+    background-color: rgb(46, 45, 45);
+    color: white;
+  }
+
+#landing_github{
+	right: 25px;
+}
+
+#landing_linkedin{
+	right: 80px;
+}
+
+.landing_link{
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	text-decoration: none;
+	border-radius: 50%;
+	border: 1px solid rgb(200,200,200);
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	transition: 0.05s ease;
+}
+.landing_link i{
+	color: rgb(200,200,200);
+	font-size: 18px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.landing_link:hover > i{
+	color: white;
+}
+
+.landing_link:hover{
+	background-color: black;
+	border-color: black;
+}
+
+/*---------------------INTRO ---------------------*/
+/*-----------------------------------------------*/
+#hi{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	font-weight: 400;
+	/*font-family: "Playfair Display";*/
+	font-size: 38px;
+	color: rgb(241, 235, 235);
+	z-index: 3;
+	transition: 0.2s linear;
+	text-align: center;
+	line-height: 30px;
+	min-width: 400px;
+}
+
+#hi span{
+	font-size: 17px;
+	margin : 100px;
+	font-family: "Raleway";
+	color: rgb(100,100,100);
+}
+
+#fly{
+	position: relative;
+	width: 10%;
+	height: 10%;
+	z-index: 3;
+    filter: grayscale(100%);
+}
+
+#flyer{
+	/*z-index: 3;*/
+	position: center;
+	bottom: 50px;
+	height: auto;
+	max-height: 300px;
+	width: 100%;
+	/*overflow: hidden;*/
+	margin: 200px;
+	filter: invert(100%);
+}
+
+#lowerBackground{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	/*background-color: rgb(255,255,255);*/
+    background-color: black;
+}
+
+.navbuttons > .expandingUnderline{
+	/*border-bottom: 3px white;*/
+	width: 0px;
+	opacity: 0.1;
+	transition: 0.4s ease;
+}
+
+.navbuttons:hover > .expandingUnderline{
+	width: 100%;
+	opacity: 1;
+}
+
+/*-----------------SCROLLDOWN -------------------*/
+/*-----------------------------------------------*/
+
+#scrollDown{
+	border-radius: 50%;
+	border: 2px solid transparent;
+	width: 50px;
+	height: 40px;
+	/*position: absolute;*/
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0 auto 0 auto;
+	z-index: 40;
+	color:white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.1s linear;
+}
+
+#scrollDown > div {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	height: 0px;
+	width: 300px;
+	border-left: 3px solid white;
+	transform: translateX(-2px);
+	transition: 0.15s linear;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+#scrollDown > div > p {
+	/*position: absolute;*/
+	top: 5px;
+	left: -100%;
+}
+
+#scrollDown > i {
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 40px;
+}
+
+#scrollDown:hover div{
+	height: 45px;
+}
+
+#scrollDown:hover div > p{
+	animation-name: showFromLeft;
+	animation-delay: 0.25s;
+	animation-duration: 0.4s;
+	animation-fill-mode: forwards;
+}
+
+
+  /*----------------- BODY ---------------------- */
+  /*--------------------------------------------- */
+
+h1, h2{
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+h1{
+    font-family: "Raleway";
+    font-weight: 400;
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+
+/*------------------- ABOUT ME---------------------*/
+/*-----------------------------------------------*/
+.about{
+	background-color:black;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	z-index: 3;
+	padding-top: 100px;
+}
+
+#aboutWrapper{
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	overflow: hidden;
+}
+
+#aboutMe{
+	font-weight: 400;
+	font-size: 42px;
+	color:black;
+	padding: 0;
+	/*margin-bottom: 100px;*/
+	font-family: "Playfair Display";
+	letter-spacing: -1px;
+}
+
+#aboutText{
+	padding: 0px 0 0px 0;
+	max-width: 700px;
+	margin: 0 auto;
+	width: 80%;
+	display: block;
+	position: relative;
+}
+
+#aboutText p{
+	margin: 20px;
+	position: relative;
+	display: inline-block;
+	font-family: 'Raleway';
+	font-weight: 400;
+	font-size: 16px;
+	color: rgb(100,100,100);
+	text-align: left;
+}
+
+#aboutText b{
+	color: white;
+}
+
+
+#resume{
+	width: 130px;
+	height: 60px;
+	border-radius: 500px;
+	border: 1px solid pink;
+	background-color: black;
+	text-decoration: none;
+	transition: 0.05s linear;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	transform: scale(1);
+	margin: 100px auto 150px auto;
+	z-index: 20;
+	overflow: hidden;
+}
+
+#resumeExpandingBackground{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	transform: rotateZ(0);
+	height: 0px;
+	transition: 0.3s ease;
+	background-color: white;
+}
+
+#resume p{
+	font-family: "Raleway";
+	font-weight: 400;
+	font-size: 19px;
+	letter-spacing: 0px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: uppercase;
+	position: relative;
+	color: white;
+	z-index: 3;
+	display: block;
+	transition: 0.2s linear;
+}
+
+#resume:hover #resumeExpandingBackground{
+	height: 100%;
+}
+
+#resume:hover p{
+	color: pink;
+}
